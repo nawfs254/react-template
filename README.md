@@ -78,15 +78,27 @@ Ensure you have the following installed on your machine:
 
 ```
 .
+├── public/              # Public files (served as-is)
 ├── src/                 # Source files
 │   ├── assets/          # Static assets (images, etc.)
-│   ├── components/      # Reusable React components
-│   ├── pages/           # Page components for routing
-│   ├── App.jsx          # Main app component
+│   ├── Components/      # Reusable React components
+│   │   ├── Navbar.jsx   # Navigation bar component
+│   │   └── Sidebar.jsx  # Sidebar component
+│   ├── Layout/          # Layout components
+│   │   └── Layout.jsx   # General layout wrapper
+│   ├── Pages/           # Page components for routing
+│   │   └── Dashboard.jsx # Dashboard page
+│   ├── Routes/          # Routing configurations
+│   │   └── Routes.jsx   # App routing
+│   ├── index.css        # Global styles
 │   └── main.jsx         # Entry point
-├── public/              # Public files (served as-is)
+├── .gitignore           # Git ignore file
+├── eslint.config.js     # ESLint configuration
+├── index.html           # Main HTML file
 ├── package.json         # Project configuration and dependencies
+├── package-lock.json    # Dependency lock file
 ├── postcss.config.js    # PostCSS configuration for Tailwind CSS
+├── README.md            # Project documentation
 ├── tailwind.config.js   # Tailwind CSS configuration
 └── vite.config.js       # Vite configuration
 ```
